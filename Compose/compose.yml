@@ -1,0 +1,8 @@
+services:
+  apache:
+    image: httpd:latest
+    container_name: jorgin
+    ports:
+    - '8000:80'
+    volumes:
+    - ./images/web:/usr/local/apache2/htdocs
